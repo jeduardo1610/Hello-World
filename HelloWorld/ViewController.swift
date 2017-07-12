@@ -26,6 +26,14 @@ class ViewController: UIViewController {
         
         label.text = "Hello World"
         
+        let alertController : UIAlertController = UIAlertController(title: "Button Tapped", message: "Hello World", preferredStyle: .alert)
+        
+        let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        
+        alertController.addAction(okAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
     }
 
 }
