@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
         textField.text = ""
         
-        let alertController : UIAlertController = UIAlertController(title: "Button Pressed", message: "Hello World", preferredStyle: .alert)
+        let alertController : UIAlertController = UIAlertController(title: "Button Pressed", message: "Hello World \(usrText)", preferredStyle: .alert)
         
         let okAction : UIAlertAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         
