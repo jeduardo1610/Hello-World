@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +25,11 @@ class ViewController: UIViewController {
 
     @IBAction func onButtonTapped(_ sender: UIButton) {
         
-        label.text = "Hello World"
+        let usrText = textField.text!
+        
+        label.text = "Hello World \(usrText)"
+        
+        textField.text = ""
         
         let alertController : UIAlertController = UIAlertController(title: "Button Tapped", message: "Hello World", preferredStyle: .alert)
         
